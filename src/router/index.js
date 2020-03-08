@@ -1,22 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import BlogCreator from '../components/BlogCreator'
-import BlogView from '../components/BlogView'
+import routes from './routes'
 
 Vue.use(VueRouter)
-
-const routes = [
-  {
-    path: '/create',
-    name: 'BlogCreator',
-    component: BlogCreator
-  },
-  {
-    path: '/',
-    name: 'BlogView',
-    component: BlogView
-  }
-]
 
 const router = new VueRouter({
   mode: 'history',
